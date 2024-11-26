@@ -44,12 +44,12 @@ Btw, you can learn how to master Quarto thanks to my online course: [Productive 
 // Define options for HTML files
 viewof selectedFile = Inputs.select(
   [
-    { value: "urgent.html", label: "Urgent" },
+    { value: "patients_traffic.html", label: "Patients" },
     { value: "ctas_month_waffle.html", label: "CTAS Month Waffle" }
   ],
   {
     label: "Select HTML file",
-    value: "urgent.html",
+    value: "patients_traffic.html",
     format: x => x.label
   }
 )
@@ -88,21 +88,34 @@ I strongly advise to create a dataviz theme that fits your company's brand. Here
 
 And now let's use it on a graph:
 
+:::: {.columns}
 
+::: {.column width="50%"}
+<iframe src="interactive/24clocktime.html" width="100%" height="400px" data-external="1"></iframe>
+:::
+
+::: {.column width="50%"}
+<iframe src="interactive/ctas_month_waffle.html" width="100%" height="400px" data-external="1"></iframe>
+:::
+
+::::
 
 
 ## Patient Traffic
 
 For a complete list of features, [visit the documentation](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template)!
 
-Oh and since we're here, did you know you can easily include a full width interactive map with `leaflet` in a quarto doc? 😍
+Oh and since we're here, did you know you can easily include a full width interactive map with `leaflet` in a quarto doc
+
 ```{r}
 #| column: screen
 #| out-width: 100%
 
-knitr::include_url({"interactive/patients_traffic.html"})
 
 ```
+
+
+
 
 
 
