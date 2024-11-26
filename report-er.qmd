@@ -22,14 +22,6 @@ Quarto is probably my favorite tool in the R/Python universe. Transforming your 
 
 While the default Quarto appearance **looks great**, there are [a few tweaks](https://www.productive-r-workflow.com/quarto-tricks) I always apply to elevate the report even further. Rather than manually adding them each time, I bundled everything into a custom format called `lumo`.
 
-```{r, warning=F, message=F, echo=FALSE}
-library(tidyverse) 
-library(hrbrthemes) # <1>
-library(viridis) # <2>
-library(ggiraph)
-library(patchwork) 
-library(sf)
-```
 
 
 ::: {.column-margin}
@@ -37,32 +29,6 @@ library(sf)
 Btw, you can learn how to master Quarto thanks to my online course: [Productive R Workflow](https://www.productive-r-workflow.com)
 
 :::
-
-```{ojs}
-//| echo: false
-
-// Define options for HTML files
-viewof selectedFile = Inputs.select(
-  [
-    { value: "patients_traffic.html", label: "Patients" },
-    { value: "ctas_month_waffle.html", label: "CTAS Month Waffle" }
-  ],
-  {
-    label: "Select HTML file",
-    value: "patients_traffic.html",
-    format: x => x.label
-  }
-)
-
-// Base path for HTML files
-basePath = "interactive/"
-
-// Construct full path
-fullPath = basePath + selectedFile.value
-
-// Create and return the iframe element
-html`<iframe src="${fullPath}" width="100%" height="500px" style="border:none;"></iframe>`
-```
 
 
 
@@ -76,7 +42,6 @@ html`<iframe src="${fullPath}" width="100%" height="500px" style="border:none;">
     height="100%" 
     frameborder="0" 
     scrolling="no" 
-    style="border: none; overflow: hidden;">
 </iframe>
 
 
@@ -86,25 +51,7 @@ This document aims at showcasing how a quarto document made with the `lumo` form
 
 
 
-## ER Time Series
 
-I strongly advise to create a dataviz theme that fits your company's brand. Here is one:
-
-
-
-And now let's use it on a graph:
-
-:::: {.columns}
-
-::: {.column width="50%"}
-<iframe src="interactive/24clocktime.html" width="100%" height="400px" data-external="1"></iframe>
-:::
-
-::: {.column width="50%"}
-<iframe src="interactive/ctas_month_waffle.html" width="100%" height="400px" data-external="1"></iframe>
-:::
-
-::::
 
 
 ## Patient Traffic
