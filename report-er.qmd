@@ -55,13 +55,13 @@ For a complete list of features, [visit the documentation](https://www.productiv
 
 Oh and since we're here, did you know you can easily include a full width interactive map with `leaflet` in a quarto doc? 😍
 
-```{r}
+```{r, echo=FALSE}
 #| column: screen
 #| out-width: 100%
 
 htmltools::tags$iframe(
   src = "https://rawcdn.githack.com/joanjz/report-er/f45aa29bb9ca58182c7f5efaebc212553b2e3052/interactive/patients_traffic.html",
-  style = "border: none; overflow: hidden; width: 100%; height: 750px;",
+  style = "border: none; overflow: hidden; width: 100%; height: 850px;",
   scrolling = "no"
 )
 
