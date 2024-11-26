@@ -27563,12 +27563,12 @@ animation: octocat-wave 560ms ease-in-out;
 <summary>Code</summary>
 <div class="sourceCode cell-code hidden" id="cb1" data-startfrom="45" data-source-offset="-34"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 44;"><span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>viewof selectedFile <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
 <span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>  [</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">value</span><span class="op">:</span> <span class="st">&quot;urgent.html&quot;</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">&quot;Urgent&quot;</span> }<span class="op">,</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">value</span><span class="op">:</span> <span class="st">&quot;patients_traffic.html&quot;</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">&quot;Patients&quot;</span> }<span class="op">,</span></span>
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">value</span><span class="op">:</span> <span class="st">&quot;ctas_month_waffle.html&quot;</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">&quot;CTAS Month Waffle&quot;</span> }</span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
 <span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  {</span>
 <span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">&quot;Select HTML file&quot;</span><span class="op">,</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    <span class="dt">value</span><span class="op">:</span> <span class="st">&quot;urgent.html&quot;</span><span class="op">,</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    <span class="dt">value</span><span class="op">:</span> <span class="st">&quot;patients_traffic.html&quot;</span><span class="op">,</span></span>
 <span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    <span class="dt">format</span><span class="op">:</span> x <span class="kw">=&gt;</span> x<span class="op">.</span><span class="at">label</span></span>
 <span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>)</span>
@@ -27623,18 +27623,22 @@ Your browser does not support iframes.
 <h2 class="anchored" data-anchor-id="er-time-series">ER Time Series</h2>
 <p>I strongly advise to create a dataviz theme that fits your company’s brand. Here is one:</p>
 <p>And now let’s use it on a graph:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="interactive/24clocktime.html" width="100%" height="400px" data-external="1">
+</iframe>
+</div><div class="column" style="width:50%;">
+<iframe src="interactive/ctas_month_waffle.html" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</div>
 </section>
 <section id="patient-traffic" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="patient-traffic">Patient Traffic</h2>
 <p>For a complete list of features, <a href="https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template">visit the documentation</a>!</p>
-<p>Oh and since we’re here, did you know you can easily include a full width interactive map with <code>leaflet</code> in a quarto doc? 😍</p>
+<p>Oh and since we’re here, did you know you can easily include a full width interactive map with <code>leaflet</code> in a quarto doc</p>
 <div class="cell column-screen">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_url</span>({<span class="st">&quot;interactive/patients_traffic.html&quot;</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<iframe src="interactive/patients_traffic.html" width="100%" height="400px" data-external="1">
-</iframe>
+
 </div>
 </section>
 <section id="documentation" class="level2">
@@ -27653,7 +27657,7 @@ Your browser does not support iframes.
   </p>
 </div>
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gRGVmaW5lIG9wdGlvbnMgZm9yIEhUTUwgZmlsZXNcbnZpZXdvZiBzZWxlY3RlZEZpbGUgPSBJbnB1dHMuc2VsZWN0KFxuICBbXG4gICAgeyB2YWx1ZTogXCJ1cmdlbnQuaHRtbFwiLCBsYWJlbDogXCJVcmdlbnRcIiB9LFxuICAgIHsgdmFsdWU6IFwiY3Rhc19tb250aF93YWZmbGUuaHRtbFwiLCBsYWJlbDogXCJDVEFTIE1vbnRoIFdhZmZsZVwiIH1cbiAgXSxcbiAge1xuICAgIGxhYmVsOiBcIlNlbGVjdCBIVE1MIGZpbGVcIixcbiAgICB2YWx1ZTogXCJ1cmdlbnQuaHRtbFwiLFxuICAgIGZvcm1hdDogeCA9PiB4LmxhYmVsXG4gIH1cbilcblxuLy8gQmFzZSBwYXRoIGZvciBIVE1MIGZpbGVzXG5iYXNlUGF0aCA9IFwiaW50ZXJhY3RpdmUvXCJcblxuLy8gQ29uc3RydWN0IGZ1bGwgcGF0aFxuZnVsbFBhdGggPSBiYXNlUGF0aCArIHNlbGVjdGVkRmlsZS52YWx1ZVxuXG4vLyBDcmVhdGUgYW5kIHJldHVybiB0aGUgaWZyYW1lIGVsZW1lbnRcbmh0bWxgPGlmcmFtZSBzcmM9XCIke2Z1bGxQYXRofVwiIHdpZHRoPVwiMTAwJVwiIGhlaWdodD1cIjUwMHB4XCIgc3R5bGU9XCJib3JkZXI6bm9uZTtcIj48L2lmcmFtZT5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkRmlsZScpIn1dfQ==
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gRGVmaW5lIG9wdGlvbnMgZm9yIEhUTUwgZmlsZXNcbnZpZXdvZiBzZWxlY3RlZEZpbGUgPSBJbnB1dHMuc2VsZWN0KFxuICBbXG4gICAgeyB2YWx1ZTogXCJwYXRpZW50c190cmFmZmljLmh0bWxcIiwgbGFiZWw6IFwiUGF0aWVudHNcIiB9LFxuICAgIHsgdmFsdWU6IFwiY3Rhc19tb250aF93YWZmbGUuaHRtbFwiLCBsYWJlbDogXCJDVEFTIE1vbnRoIFdhZmZsZVwiIH1cbiAgXSxcbiAge1xuICAgIGxhYmVsOiBcIlNlbGVjdCBIVE1MIGZpbGVcIixcbiAgICB2YWx1ZTogXCJwYXRpZW50c190cmFmZmljLmh0bWxcIixcbiAgICBmb3JtYXQ6IHggPT4geC5sYWJlbFxuICB9XG4pXG5cbi8vIEJhc2UgcGF0aCBmb3IgSFRNTCBmaWxlc1xuYmFzZVBhdGggPSBcImludGVyYWN0aXZlL1wiXG5cbi8vIENvbnN0cnVjdCBmdWxsIHBhdGhcbmZ1bGxQYXRoID0gYmFzZVBhdGggKyBzZWxlY3RlZEZpbGUudmFsdWVcblxuLy8gQ3JlYXRlIGFuZCByZXR1cm4gdGhlIGlmcmFtZSBlbGVtZW50XG5odG1sYDxpZnJhbWUgc3JjPVwiJHtmdWxsUGF0aH1cIiB3aWR0aD1cIjEwMCVcIiBoZWlnaHQ9XCI1MDBweFwiIHN0eWxlPVwiYm9yZGVyOm5vbmU7XCI+PC9pZnJhbWU+YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZEZpbGUnKSJ9XX0=
 </script>
 <script type="module">
 window._ojs.runtime.setLocalResolver({});
