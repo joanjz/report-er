@@ -22,6 +22,15 @@ Quarto is probably my favorite tool in the R/Python universe. Transforming your 
 
 While the default Quarto appearance **looks great**, there are [a few tweaks](https://www.productive-r-workflow.com/quarto-tricks) I always apply to elevate the report even further. Rather than manually adding them each time, I bundled everything into a custom format called `lumo`.
 
+```{r, warning=F, message=F, echo=FALSE}
+library(tidyverse) 
+library(hrbrthemes) # <1>
+library(viridis) # <2>
+library(ggiraph)
+library(patchwork) 
+library(sf)
+```
+
 
 ::: {.column-margin}
 
