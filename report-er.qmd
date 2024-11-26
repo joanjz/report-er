@@ -46,6 +46,15 @@ Btw, you can learn how to master Quarto thanks to my online course: [Productive 
 </iframe>
 
 
+## 24clocktime
+
+<iframe 
+    src="https://rawcdn.githack.com/joanjz/report-er/f45aa29bb9ca58182c7f5efaebc212553b2e3052/interactive/24clocktime.html"     width="100%" 
+    height="300px" 
+    frameborder="0" 
+    scrolling="no" 
+    style="border: none; overflow: hidden;">
+</iframe>
 
 
 ## Patient Trend
@@ -53,25 +62,16 @@ Btw, you can learn how to master Quarto thanks to my online course: [Productive 
 For a complete list of features, [visit the documentation](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template)!
 
 Oh and since we're here, did you know you can easily include a full width interactive map with `leaflet` in a quarto doc? 😍
-```{r}
-#| column: screen
-#| out-width: 100%
-
-knitr::include_url({"https://rawcdn.githack.com/PatGeorges/html_files/d8b8bdd062e4d46d27ca7d16dd479673022d3543/movingbubbles.html"})
-
-```
-
 
 ```{r}
 #| column: screen
 #| out-width: 100%
 
 htmltools::tags$iframe(
-  src = "https://rawcdn.githack.com/PatGeorges/html_files/d8b8bdd062e4d46d27ca7d16dd479673022d3543/movingbubbles.html",
+  src = "https://rawcdn.githack.com/joanjz/report-er/f45aa29bb9ca58182c7f5efaebc212553b2e3052/interactive/patients_traffic.html",
   style = "border: none; overflow: hidden; width: 100%; height: 500px;"
 )
 
-
-
 ```
+
 
