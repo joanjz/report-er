@@ -44,12 +44,12 @@ Btw, you can learn how to master Quarto thanks to my online course: [Productive 
 // Define options for HTML files
 viewof selectedFile = Inputs.select(
   [
-    { value: "24clocktime.html", label: "24-Hour Clock Time" },
+    { value: "urgent.html", label: "Urgent" },
     { value: "ctas_month_waffle.html", label: "CTAS Month Waffle" }
   ],
   {
     label: "Select HTML file",
-    value: "24clocktime.html",
+    value: "urgent.html",
     format: x => x.label
   }
 )
@@ -77,6 +77,33 @@ html`<iframe src="${fullPath}" width="100%" height="500px" style="border:none;">
 
 
 This document aims at showcasing how a quarto document made with the `lumo` format looks like.
+
+
+
+## ER Time Series
+
+I strongly advise to create a dataviz theme that fits your company's brand. Here is one:
+
+
+
+And now let's use it on a graph:
+
+
+
+
+## Patient Traffic
+
+For a complete list of features, [visit the documentation](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template)!
+
+Oh and since we're here, did you know you can easily include a full width interactive map with `leaflet` in a quarto doc? 😍
+```{r}
+#| column: screen
+#| out-width: 100%
+
+knitr::include_url({"interactive/patients_traffic.html"})
+
+```
+
 
 
 ## Documentation
