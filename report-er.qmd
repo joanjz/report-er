@@ -46,15 +46,7 @@ Btw, you can learn how to master Quarto thanks to my online course: [Productive 
 </iframe>
 
 
-## 24clocktime
 
-<iframe 
-    src="https://rawcdn.githack.com/joanjz/report-er/f45aa29bb9ca58182c7f5efaebc212553b2e3052/interactive/24clocktime.html"     width="100%" 
-    height="300px" 
-    frameborder="0" 
-    scrolling="no" 
-    style="border: none; overflow: hidden;">
-</iframe>
 
 
 ## Patient Trend
@@ -69,9 +61,24 @@ Oh and since we're here, did you know you can easily include a full width intera
 
 htmltools::tags$iframe(
   src = "https://rawcdn.githack.com/joanjz/report-er/f45aa29bb9ca58182c7f5efaebc212553b2e3052/interactive/patients_traffic.html",
-  style = "border: none; overflow: hidden; width: 100%; height: 500px;"
+  style = "border: none; overflow: hidden; width: 100%; height: 500px;",
+  scrolling = "no"
 )
 
 ```
 
+
+
+```{r}
+#| column: screen
+#| out-width: 100%
+
+htmltools::tags$iframe(
+  src = "https://rawcdn.githack.com/joanjz/report-er/f45aa29bb9ca58182c7f5efaebc212553b2e3052/interactive/24clocktime.html
+",
+  style = "border: none; overflow: hidden; width: 100%; height: 500px;",
+  scrolling = "no"
+)
+
+```
 
