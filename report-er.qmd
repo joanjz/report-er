@@ -65,8 +65,8 @@ html`<iframe src="${fullPath}" width="100%" height="500px" style="border:none;">
 ```
 
 
-## Sample Embed 
-<iframe src="interactive/24clocktime.html" 
+## Patient Visit Flow
+<iframe src="interactive/patients_traffic.html" 
         width="100%" 
         height="100vh" 
         frameborder="0" 
