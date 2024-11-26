@@ -65,17 +65,13 @@ knitr::include_url({"https://rawcdn.githack.com/PatGeorges/html_files/d8b8bdd062
 ```{r}
 #| column: screen
 #| out-width: 100%
-#| layout: |
-#|   <style>
-#|   iframe {
-#|       border: none; /* Removes the border */
-#|       overflow: hidden; /* Ensures no scrollbar */
-#|       width: 100%; /* Full width */
-#|       height: 100%; /* Full height */
-#|   }
-#|   </style>
 
-knitr::include_url("https://rawcdn.githack.com/PatGeorges/html_files/d8b8bdd062e4d46d27ca7d16dd479673022d3543/movingbubbles.html")
+htmltools::tags$iframe(
+  src = "https://rawcdn.githack.com/PatGeorges/html_files/d8b8bdd062e4d46d27ca7d16dd479673022d3543/movingbubbles.html",
+  style = "border: none; overflow: hidden; width: 100%; height: 500px;"
+)
+
+
 
 ```
 
