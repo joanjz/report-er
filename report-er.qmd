@@ -42,7 +42,7 @@ Btw, you can learn how to master Quarto thanks to my online course: [Productive 
     height="100%" 
     frameborder="0" 
     scrolling="no" 
-    style="border: none; overflow: hidden;">
+    style="border: none; overflow: visible;">
 </iframe>
 
 
