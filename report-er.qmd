@@ -29,22 +29,42 @@ Btw, you can learn how to master Quarto thanks to my online course: [Productive 
 
 :::
 
+```{ojs}
+//| echo: false
 
 // Define options for HTML files
 viewof selectedFile = Inputs.select(
-  ["24clocktime.html", "ctas_month_waffle.html"],
-  {label: "Select HTML file", value: "24clocktime.html"}
+  [
+    { value: "24clocktime.html", label: "24-Hour Clock Time" },
+    { value: "ctas_month_waffle.html", label: "CTAS Month Waffle" }
+  ],
+  {
+    label: "Select HTML file",
+    value: "24clocktime.html",
+    format: x => x.label
+  }
 )
 
 // Base path for HTML files
 basePath = "interactive/"
 
 // Construct full path
-fullPath = basePath + selectedFile
+fullPath = basePath + selectedFile.value
 
 // Create and return the iframe element
 html`<iframe src="${fullPath}" width="100%" height="500px" style="border:none;"></iframe>`
+```
 
+
+## Sample Embed 
+<iframe src="interactive/24clocktime.html" 
+        width="100%" 
+        height="100vh" 
+        frameborder="0" 
+        scrolling="no" 
+        style="overflow: hidden;">
+    Your browser does not support iframes.
+</iframe>
 
 
 This document aims at showcasing how a quarto document made with the `lumo` format looks like.
