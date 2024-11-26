@@ -39,42 +39,10 @@ Btw, you can learn how to master Quarto thanks to my online course: [Productive 
 <iframe 
     src="interactive/patients_traffic.html" 
     width="100%" 
-    height="100%" 
+    height="600px" 
     frameborder="0" 
     scrolling="no" 
-    style="border: none; overflow: visible;">
+    style="border: none; overflow: hidden;">
 </iframe>
-
-
-
-
-This document aims at showcasing how a quarto document made with the `lumo` format looks like.
-
-
-
-
-
-
-## Patient Traffic
-
-For a complete list of features, [visit the documentation](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template)!
-
-Oh and since we're here, did you know you can easily include a full width interactive map with `leaflet` in a quarto doc
-
-```{r}
-#| column: screen
-#| out-width: 100%
-
-
-```
-
-
-
-
-
-
-## Documentation
-
-The documentation for this quarto custom format is available [here](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template)
 
 
