@@ -57,6 +57,6 @@ Oh and since we're here, did you know you can easily include a full width intera
 #| column: screen
 #| out-width: 100%
 
-knitr::include_url({"interactive/patients_traffic.html"})
+knitr::include_url({"https://rawcdn.githack.com/PatGeorges/html_files/d8b8bdd062e4d46d27ca7d16dd479673022d3543/movingbubbles.html"})
 
 ```
